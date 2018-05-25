@@ -6,8 +6,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <h1>Caesar Cipher</h1>
+    <form action="caesar">
+    <p id=Instruccion>Introduce tu mensaje </p>
+    <p> <textarea rows="10" cols="40" id="textoATraducir" name="texto"></textarea></p>
+    <p> Key &nbsp; <input type="number"  max=25 min=1   id= "shift"></p>
+    <p><input type="button" value="Cifrar!" id="cifrado"> &nbsp;&nbsp; <input type="button" value="Descifrar!" id="descifrado"></p>
+    <br>
+    <br>
+    <p>Resultados:</p>
+    <p id= mostrarResultado></p>
+    
+  <div id="root"></div>
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
+  </form>
   </body>
 </html>
+
