@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Coder";
+    src : url(Semi.otf)
+}
+
+body{
+
+    color: #66088c;
+    font-family: Coder, 'Times New Roman', Times, serif;
+   background-image: url(luceswhite.jpg)
+}
+
+#instruccion{
+    background-color: #bbb0b0;
+    margin: 50px, 10px;
+    color: #ee1694;
+    padding:  20px;
+    font-size: 15px;
+}
+.box-encryption{
+    text-align: center;
+}
+
+.box-encryption p{
+    margin-bottom:20px;
+}
+
+.box-encryption .txt-area, .box-encryption .btn-content{
+    display:inline-block;
+    vertical-align: top;
+}
+
+h1{
+   
+    font-size: 40px;
+    text-align: center;   
+    background-color: #ee1694;
+    color: #bbb0b0;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.caja {
+    margin: 4px;
+    font-size: 16px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    border: 1px solid #66088c;
+    
+}
+
+#shift {
+    margin: 4px;
+    font-size: 16px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid #66088c;
+}
+
+#cifrado, #descifrado, #reset {
+    color: #da5050;
+    font-family: Coder, 'Times New Roman', Times, serif;
+    background: #62ceb7;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    box-shadow: none;
+   
+    
+
+}
+
+div{
+    text-align: center;
+}
+
+#results{
+    text-align-last: inherit;
+}
+
+/*
+#descifrado {
+    color: #fff;
+    font-family: Coder, 'Times New Roman', Times, serif;
+    background: #000000;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    box-shadow: none;
+    border-radius: 7px;
+}*/

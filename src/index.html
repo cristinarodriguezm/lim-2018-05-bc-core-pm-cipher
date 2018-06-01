@@ -5,22 +5,48 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="fondo">
     <h1>Caesar Cipher</h1>
     <form action="caesar">
-    <p id=Instruccion>Introduce tu mensaje </p>
-    <p> <textarea rows="10" cols="40" id="textoATraducir" name="texto"></textarea></p>
-    <p> Key &nbsp; <input type="number"  max=25 min=1   id= "shift"></p>
-    <p><input type="button" value="Cifrar!" id="cifrado"> &nbsp;&nbsp; <input type="button" value="Descifrar!" id="descifrado"></p>
-    <br>
-    <br>
-    <p>Resultados:</p>
-    <p id= mostrarResultado></p>
-    
-  <div id="root"></div>
-  <script src="index.js"></script>
-  <script src="cipher.js"></script>
-  </form>
+      <div id="instruccion">
+      <p>Bienvenido al Cifrado César, con esta herramienta podrás cifrar y descifrar mensajes con tus amigos de una manera rápida y fácil. Sólo escribe tu mensaje, introduce el número que quieras, dale click a cifrar, luego copia tu mensaje cifrado ¡y listo!</p>
+      <p>De la misma manera, introduce el mensaje de tu amigo, el número de en el que el/ella lo cifró y descubrirás qué te quiere decir.</p>
+      <p>*** Es importante recordar que número introdujiste para cifrar tu código, tu amigo/a lo necesitará para poder descifrarlo.</p>
+      </div> 
+      <p id="Instruccion"></p>
+      <div class="box-encryption">
+        <div class="txt-area">
+          <p>
+              <textarea placeholder= "Ingresa tu texto" rows="10" cols="40" id="textoATraducir" class="caja"></textarea>
+          </p>
+        </div>
+        <div class="btn-content">
+          <p>
+            Key &nbsp; <input type="number"  max="25" min="1"   id= "shift">
+          </p>
+          <p>
+            <input type="button" value="Cifrar!" id="cifrado" style="border:none">
+          </p>
+          <p>
+            <input type="button" value="Descifrar!" id="descifrado" style="border:none">
+          </p>
+
+        </div>
+      </div>
+      
+      
+      <br>
+      <br>
+          
+        <div id="results">
+          <p>
+            <textarea rows="10" cols="40" id="mostrarResultado" class="caja" placeholder="Aqui recibirás tu resultado"></textarea>
+          </p>
+        </div>
+        
+    </form>
+    <div id="root"></div>
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
   </body>
 </html>
-

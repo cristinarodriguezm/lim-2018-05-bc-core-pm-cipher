@@ -1,40 +1,35 @@
 window.cipher = {
-  
+  encode : (offset, string) => {
+    let m=string;
+    let s=offset % 26;
+    let result ="";
+    for (var i = 0; i < m.length; i++){ 
+      var letter = m.charCodeAt(i); //convirtiendo el texto a codigo ASCII
+      if (65 <= letter && letter <= 90) {
+        result += String.fromCharCode((letter - 65 + s) % 26 + 65);// Aplicando formula de conversion en caso de letras mayusculas
+      } else if (97 <= letter && letter <= 122){
+        result += String.fromCharCode((letter - 97 + s) % 26 + 97); // Aplicando forumula de conversion en caso de letras minusculas
+      } else { 
+        result += m.charAt(i) // traspaso de caracteres no incluidos en los rangos anteriores
+      }
+   
+  }
+  return result;
   // ... 
-};
-
-cifrar.addEventListener("click", encode);
-descifrar.addEventListener("click", decode);
-
-function encode () {
-  var m = document.getElementById("textoATraducir").value;
-  var desp = document.getElementById("shift").value;
-  var s = parseInt(desp)
-  var result = " ";
-  for (var i = 0; i < m.length; i++){
-      var letter = m.charCodeAt(i);
-    if (65 <= letter && letter <= 90) result += String.fromCharCode((letter - 65 + s) % 26 + 65);
-    else if (97 <= letter && letter <= 122) result += String.fromCharCode((letter - 97 + s) % 26 + 97);
-    else                          result += m.charAt(i)
-  
-    document.getElementById("mostrarResultado").innerHTML = result;
+},
+  decode : (offset, string) => {
+    let m= string;
+    let s= offset % 26;
+    let result = "";
+    for (var i = 0; i < m.length; i++){
+      var letter = m.charCodeAt(i);//convirtiendo el texto a codigo ASCII
+      if (65 <= letter && letter <= 90) {
+      result += String.fromCharCode((letter - 65 - s + 26) % 26 + 65);// Aplicando formula de conversion en caso de letras mayusculas
+      } else if (97 <= letter && letter <= 122){ 
+      result += String.fromCharCode((letter - 97 - s + 26) % 26 + 97);// Aplicando forumula de conversion en caso de letras minusculas
+      }else {  result += m.charAt(i) // traspaso de caracteres no incluidos en los rangos anteriores
+      }
+    }
+    return result;
   }
-}
-
-
-function decode () {
-  var m = document.getElementById("textoATraducir").value;
-  var desp = document.getElementById("shift").value;
-  var s= parseInt(desp)
-  var result = " ";
-  for (var i = 0; i < m.length; i++){
-      var letter = m.charCodeAt(i);
-      if (65 <= letter && letter <=(90-s) ) result += String.fromCharCode((letter - 65 - s) % 26 + 65);
-      else if (((90-s)+1) <= letter && letter <= (90-s)) result += String.fromCharCode((letter - 97 - s) % 26 + 97);
-    else                          result += m.charAt(i)
-  
-    document.getElementById("mostrarResultado").innerHTML = result;
-  
-  }
-
 }
