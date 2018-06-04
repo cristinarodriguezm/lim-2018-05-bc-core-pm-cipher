@@ -5,20 +5,22 @@
 
 body{
 
-    color: #66088c;
+    color: #71049c;
     font-family: Coder, 'Times New Roman', Times, serif;
-   background-image: url(luceswhite.jpg)
+   background-image: url(6656.jpg)
+  
 }
 
 #instruccion{
-    background-color: #bbb0b0;
+    background-color: #21b4b4;
     margin: 50px, 10px;
-    color: #ee1694;
+    color: #76159c;
     padding:  20px;
     font-size: 15px;
 }
 .box-encryption{
     text-align: center;
+    margin: 20px;
 }
 
 .box-encryption p{
@@ -34,8 +36,8 @@ h1{
    
     font-size: 40px;
     text-align: center;   
-    background-color: #ee1694;
-    color: #bbb0b0;
+    color: #21b4b4;
+    background-color: #71049c;
 }
 
 p{
@@ -47,7 +49,7 @@ p{
     margin: 4px;
     font-size: 16px;
     font-family: Calibri, Arial, Helvetica, sans-serif;
-    border: 1px solid #66088c;
+    border: 1px solid #71049c;
     
 }
 
@@ -56,17 +58,18 @@ p{
     font-size: 16px;
     font-family: Calibri, Arial, Helvetica, sans-serif;
     text-align: center;
-    border: 1px solid #66088c;
+    border: 1px solid #71049c;
+    width: 50px;
 }
 
 #cifrado, #descifrado, #reset {
-    color: #da5050;
+    color: #0ce9e9;
     font-family: Coder, 'Times New Roman', Times, serif;
-    background: #62ceb7;
+    background: #71049c;
     width: 120px;
     height: 30px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: center;
     box-shadow: none;
    
@@ -74,24 +77,10 @@ p{
 
 }
 
-div{
-    text-align: center;
-}
-
 #results{
-    text-align-last: inherit;
+    text-align: center;
+    margin: 20px;
+    
+
 }
 
-/*
-#descifrado {
-    color: #fff;
-    font-family: Coder, 'Times New Roman', Times, serif;
-    background: #000000;
-    width: 120px;
-    height: 30px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-align: center;
-    box-shadow: none;
-    border-radius: 7px;
-}*/
